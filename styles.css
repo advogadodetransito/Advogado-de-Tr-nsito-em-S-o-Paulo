@@ -12,7 +12,7 @@ body {
 /* Navbar */
 .navbar {
     background: #22015090;
-    color: white;
+    color: white; 
     padding: 1rem;
     position: fixed;
     top: 0;
@@ -127,4 +127,91 @@ body {
     .hero h1 {
         font-size: 2rem;
     }
+}
+.next-section {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.next-section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.next-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+
+
+/* Section with Left Image - Right Text */
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.section-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.section-text h2 {
+    color: #0d0c0c;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.section-text p {
+    font-size: 16px;
+    color: #0e0e0e;
+    line-height: 1.6;
+}
+
+/* Responsive Fix */
+@media (max-width: 900px) {
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-image,
+    .section-text {
+        max-width: 100%;
+    }
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5D; /* Slightly darker green */
 }
